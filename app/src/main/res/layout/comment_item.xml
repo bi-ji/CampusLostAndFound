@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- 评论人图像 -->
+        <ImageView
+            android:id="@+id/iv_comment_portrait"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY" />
+        <!-- 评论人昵称、评论时间、评论内容、回复 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- 评论人昵称 -->
+            <TextView
+                android:id="@+id/tv_comments_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text=""
+                android:textColor="#23238E"
+                android:textSize="12sp" />
+            <!-- 回复 -->
+            <TextView
+                android:id="@+id/tv_comments_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/reply"
+                android:textColor="#23238E"
+                android:textSize="12sp" />
+            <!-- 评论时间 -->
+            <TextView
+                android:id="@+id/tv_comments_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_comments_nickname"
+                android:text="2016年4月27日 09:46:08"
+                android:textSize="8sp" />
+            <!-- 评论人内容 -->
+            <TextView
+                android:id="@+id/tv_comments_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/tv_comments_time"
+                android:text=""
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- 评论回复列表 -->
+    <com.edu.claf.view.NoScrollListView
+        android:id="@+id/nslv_reply_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="70dp"
+        android:divider="#00000000" />
+
+</LinearLayout>

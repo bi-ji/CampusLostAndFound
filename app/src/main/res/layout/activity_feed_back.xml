@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_green">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="#ff36cd00">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="意见反馈"
+                android:textColor="#ffffffff"
+                android:textSize="20.0sp" />
+
+            <ImageButton
+                android:id="@+id/feedback_back"
+                android:layout_width="50.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="#ff36cd00"
+                android:contentDescription="@null"
+                android:onClick="backPersonCentral"
+                android:src="@drawable/arrow_left_gray_white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/feedback_imageView02"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginTop="10.0dip"
+            android:background="#ffd3d3d3"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/feedback_text"
+            android:layout_width="fill_parent"
+            android:layout_height="200.0dip"
+            android:background="#ffffffff"
+            android:paddingTop="10.0dip">
+
+            <EditText
+                android:id="@+id/et_feedback_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/shape_transparent_post"
+                android:gravity="top"
+                android:hint="这里，可以写下您宝贵的建议哦！^o^"
+                android:paddingLeft="5.0dip"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20.0dip"
+                android:layout_gravity="right"
+                android:layout_marginRight="5.0dip"
+                android:background="#ffffffff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_feedback_text_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#ff808080"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/500个字"
+                    android:textColor="#ff808080"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="#ffd3d3d3"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginTop="15.0dip"
+            android:background="#ffd3d3d3"
+            android:orientation="vertical" />
+
+        <EditText
+            android:id="@+id/et_feedback_contact_way"
+            android:layout_width="fill_parent"
+            android:layout_height="110.0dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/shape_transparent_post"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="这里，可以留下您的联系方式哦！^o^"
+            android:paddingLeft="5.0dip"
+            android:paddingTop="10.0dip"
+            android:textColor="#ff808080"
+            android:textSize="16.0sp">
+
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="#ffd3d3d3"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/feedback_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/text_orange_pink"
+        android:text="@string/submit"
+        android:textColor="#ffffffff"
+        android:onClick="submitFeedback"
+        android:textSize="15.0sp" />
+</RelativeLayout>

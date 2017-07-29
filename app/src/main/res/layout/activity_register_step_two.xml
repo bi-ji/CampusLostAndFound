@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/register"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/activity_register"
+            android:layout_width="fill_parent"
+            android:layout_height="55.0dip"
+            android:background="#2f000000">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="注册（2/3）"
+                android:textColor="#ffffffff"
+                android:textSize="20.0sp" />
+
+            <ImageButton
+                android:id="@+id/ib_register_ind_page_two_back"
+                android:layout_width="50.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="#2f000000"
+                android:contentDescription="@null"
+                android:duplicateParentState="true"
+                android:src="@drawable/arrow_left_gray_white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="#ff808080" />
+        <RelativeLayout
+            android:id="@+id/rl_register_location_city"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:background="#ffffffff">
+
+            <TextView
+                android:id="@+id/tv_register_location_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15.0dip"
+                android:text="选择城市"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/tv_register_location_city_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="30.0dip"
+                android:text="选择"
+                android:textSize="18.0sp" />
+
+            <ImageView
+                android:id="@+id/tv_change_location_city_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:paddingRight="10.0dip"
+                android:src="@drawable/arrow_right_gray_white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="#ff808080" />
+
+        <LinearLayout
+            android:id="@+id/change_location_two"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_register_location_school"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:background="#ffffffff">
+
+                <TextView
+                    android:id="@+id/tv_register_location_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15.0dip"
+                    android:text="选择学校"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_register_location_school_choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="30.0dip"
+                    android:text="选择"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:id="@+id/change_location_school_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:paddingRight="10.0dip"
+                    android:src="@drawable/arrow_right_gray_white" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="#ff808080" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_register_step_next_page"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/text_orange_pink"
+                android:text="下一步"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_green"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ScrollView
+            android:id="@+id/post_found_message_scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="55.0dip"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:gravity="fill_vertical"
+                        android:paddingLeft="5.0dip"
+                        android:text="标题："
+                        android:textColor="#ff808080"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/et_post_found_message_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_transparent_post"
+                        android:focusable="true"
+                        android:hint="不超过15个字..."
+                        android:maxLength="15"
+                        android:scrollHorizontally="false"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textColor="#ff808080"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="60.0dip"
+                        android:background="#ffffffff"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="10.0dip"
+                            android:gravity="top"
+                            android:paddingLeft="5.0dip"
+                            android:text="@string/FoundTime"
+                            android:textColor="#ff808080"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/et_post_found_message_time"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:background="@drawable/shape_transparent_post"
+                            android:focusableInTouchMode="false"
+                            android:hint="请选择拾物时间..."
+                            android:paddingLeft="5.0dip"
+                            android:singleLine="false"
+                            android:textColor="#ff808080"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_post_found_message_time"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/time_choose_orange_gray" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffffff">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="60.0dip"
+                        android:background="#ffffffff"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="10.0dip"
+                            android:gravity="top"
+                            android:paddingLeft="5.0dip"
+                            android:text="@string/FoundPlace"
+                            android:textColor="#ff808080"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/et_post_found_message_place"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:background="@drawable/shape_transparent_post"
+                            android:hint="请输入拾物地点..."
+                            android:paddingLeft="5.0dip"
+                            android:singleLine="false"
+                            android:textColor="#ff808080"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+
+                    <!--<Button-->
+                        <!--android:id="@+id/post_found_message_locate_Button"-->
+                        <!--android:layout_width="50.0dip"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_marginRight="5.0dip"-->
+                        <!--android:background="@drawable/locate_blue_white" />-->
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40.0dip"
+                        android:gravity="fill_vertical"
+                        android:paddingLeft="5.0dip"
+                        android:text="联系电话："
+                        android:textColor="#ff808080"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/et_post_found_message_telephone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_transparent_post"
+                        android:inputType="phone"
+                        android:scrollHorizontally="false"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="false"
+                        android:textColor="#ff808080"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="180.0dip"
+                    android:background="#ffffffff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:text="@string/choose_found_type"
+                        android:textColor="#ff000000"
+                        android:textSize="15.0sp" />
+
+                    <GridView
+                        android:id="@+id/gv_post_found_type_message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="5.0dip"
+                        android:columnWidth="50.0dip"
+                        android:gravity="center"
+                        android:horizontalSpacing="2.0dip"
+                        android:numColumns="6"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="2.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:background="#ffffffff"
+                        android:text="拾物简介："
+                        android:textSize="15.0dip" />
+
+                    <EditText
+                        android:id="@+id/et_post_found_message_desc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="70.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:background="@drawable/shape_transparent_post"
+                        android:gravity="top"
+                        android:maxEms="222"
+                        android:paddingLeft="5.0dip"
+                        android:selectAllOnFocus="true"
+                        android:textColorHint="#ff000000"
+                        android:textSize="15.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:background="#ffffffff"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/post_found_message_Num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#ff808080"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/222个字"
+                        android:textColor="#ff808080"
+                        android:textSize="15.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/post_found_message_submit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginTop="40.0dip"
+                    android:background="@drawable/text_orange_pink"
+                    android:gravity="center"
+                    android:onClick="submitFoundInfo"
+                    android:text="@string/submit"
+                    android:textColor="#ffffffff"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/PostLostMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="#ff36cd00">
+
+            <TextView
+                android:id="@+id/found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="发布招领信息"
+                android:textColor="#ffffffff"
+                android:textSize="20.0sp" />
+
+            <ImageButton
+                android:id="@+id/iv_post_found_message_back"
+                android:layout_width="50.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="#ff36cd00"
+                android:contentDescription="@null"
+                android:src="@drawable/arrow_left_gray_white" />
+
+            <TextView
+                android:id="@+id/postfoundmessage_submit"
+                android:layout_width="50.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/normal_write_pressed_gray"
+                android:textSize="15.0dip" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

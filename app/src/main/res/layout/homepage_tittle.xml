@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_home_title"
+    style="@style/GuideStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!--<ImageButton-->
+        <!--android:layout_weight="1"-->
+        <!--android:id="@+id/btn_map"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/locate_orange"-->
+        <!--android:layout_alignParentLeft="true"/>-->
+    <Button
+        android:id="@+id/btn_lost"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="失物"/>
+        <!--android:layout_toRightOf="@id/btn_map"-->
+        <!--android:layout_alignBottom="@+id/btn_map"-->
+    <Button
+
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="招领"
+        android:layout_alignParentTop="true"
+        />
+    <!--<ImageButton-->
+        <!--android:layout_weight="1"-->
+        <!--android:id="@+id/btn_classify"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/classify"-->
+        <!--android:layout_alignParentRight="true"/>-->
+
+</LinearLayout>

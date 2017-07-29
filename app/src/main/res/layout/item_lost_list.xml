@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:descendantFocusability="blocksDescendants"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/bg_list_selector_outside"
+        android:duplicateParentState="true"
+        android:orientation="vertical"
+        android:paddingTop="10.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginRight="10.0dip"
+            android:orientation="horizontal"
+            android:weightSum="4.0">
+
+            <ImageView
+                android:id="@+id/iv_head_image"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:focusable="false"
+                android:gravity="center"
+                android:src="@drawable/regist_head"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_lost_public_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30.0dip"
+                    android:ellipsize="end"
+                    android:paddingBottom="2.0dip"
+                    android:singleLine="true"
+                    android:text="昵称"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_lost_public_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18.0dip"
+                    android:text="2015-03-14 12:35:56"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/iv_lost_info_delete"
+                    android:visibility="invisible"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:background="@android:drawable/ic_menu_delete"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="#ffd3d3d3"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_list_selector_without"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/head"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="70.0dip"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.8"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_lost_public_title"
+                                android:layout_width="fill_parent"
+                                android:layout_height="45.0dip"
+                                android:layout_marginLeft="5.0dip"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:paddingTop="10.0dip"
+                                android:singleLine="true"
+                                android:text="啊哈哈，丢人啦啦啦"
+                                android:textColor="#ffa2793e"
+                                android:textSize="18.0sp" />
+
+                            <LinearLayout
+                                android:id="@+id/line1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5.0dip"
+                                android:layout_marginRight="30.0dip"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/titletime"
+                                    android:layout_width="20.0dip"
+                                    android:layout_height="20.0dip"
+                                    android:background="@drawable/clock_num"
+                                    android:text=""
+                                    android:textSize="15.0sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_lost_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginLeft="10.0dip"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:text="2015-04-25 23:59:59"
+                                    android:textSize="15.0sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="50.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/titleplace"
+                            android:layout_width="20.0dip"
+                            android:layout_height="20.0dip"
+                            android:background="@drawable/map_num"
+                            android:text=""
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/tv_lost_public_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10.0dip"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="北京"
+                            android:textSize="15.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/title_detail"
+                            android:layout_width="20.0dip"
+                            android:layout_height="20.0dip"
+                            android:background="@drawable/details_num"
+                            android:text=""
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/tv_lost_public_desc"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40.0dip"
+                            android:layout_marginLeft="10.0dip"
+                            android:ellipsize="end"
+                            android:gravity="top"
+                            android:maxLines="2"
+                            android:text="北京丢人了"
+                            android:textSize="15.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="56.0dip"
+                    android:layout_height="78.0dip"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5.0dip"
+                    android:background="@drawable/lable_car"
+                    android:gravity="center"
+                    android:text="" />
+            </FrameLayout>
+
+            <!--<ImageView-->
+            <!--android:id="@+id/picture"-->
+            <!--android:layout_width="115.0dip"-->
+            <!--android:layout_height="130.0dip"-->
+            <!--android:layout_marginLeft="40.0dip"-->
+            <!--android:layout_marginTop="2.0dip"-->
+            <!--android:contentDescription="@null"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/meinv" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/line4"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="40.0dip"-->
+                <!--android:layout_marginLeft="10.0dip"-->
+                <!--android:layout_marginRight="10.0dip"-->
+                <!--android:layout_marginTop="10.0dip">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/titleattention"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="浏览量 "-->
+                        <!--android:textColor="#ff808080"-->
+                        <!--android:textSize="14.0sp" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/titleattentionno"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="0"-->
+                        <!--android:textColor="#ff808080"-->
+                        <!--android:textSize="14.0sp" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="   "-->
+                        <!--android:textColor="#ff808080"-->
+                        <!--android:textSize="14.0sp" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/personlocation"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:text="吉林大学南湖校区通信工程学院覃宏艺"-->
+                        <!--android:textColor="#ff808080"-->
+                        <!--android:textSize="14.0sp" />-->
+                <!--</LinearLayout>-->
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_lost_item"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="#ffd3d3d3"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/ll_lost_item_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+
+            <Button
+                android:id="@+id/btn_lost_list_call_phone"
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/circle_shape"
+                android:gravity="center"
+                android:focusable="false"
+                android:text="电话" />
+
+            <Button
+                android:id="@+id/btn_lost_list_send_sms"
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/circle_shape"
+                android:gravity="center"
+                android:focusable="false"
+                android:text="短信" />
+
+            <Button
+                android:id="@+id/btn_lost_list_comments"
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/circle_shape"
+                android:gravity="center"
+                android:focusable="false"
+                android:text="评论" />
+
+            <Button
+                android:id="@+id/btn_lost_list_share"
+                android:layout_width="0.0dip"
+                android:layout_height="35.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/circle_shape"
+                android:gravity="center"
+                android:focusable="false"
+                android:text="分享" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="10.0dip"
+            android:background="#ff808080"
+            android:orientation="vertical"
+            android:visibility="invisible" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_green"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/comment_rela"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:background="@drawable/list_chosen">
+
+        <ImageView
+            android:id="@+id/comment_png"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/comments" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/comment_png"
+            android:gravity="center"
+            android:text="  评论"
+            android:textSize="18.0sp" />
+
+        <FrameLayout
+            android:id="@+id/comment_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip">
+
+            <ImageView
+                android:id="@+id/comment_png_no"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:visibility="invisible"
+                android:background="@drawable/color_red" />
+
+            <TextView
+                android:id="@+id/comment_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#ffffffff"
+                android:textSize="13.0sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ff808080"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/words_rela"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:visibility="gone"
+        android:background="@drawable/list_chosen">
+
+        <ImageView
+            android:id="@+id/words_png"
+            android:layout_width="35.0dip"
+            android:layout_height="30.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/message_words" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/words_png"
+            android:gravity="center"
+            android:text="  留言"
+            android:textSize="18.0sp" />
+
+        <FrameLayout
+            android:id="@+id/words_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip">
+
+            <ImageView
+                android:id="@+id/words_png_no"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:visibility="invisible"
+                android:background="@drawable/color_red" />
+
+            <TextView
+                android:id="@+id/words_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#ffffffff"
+                android:textSize="15.0sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ff808080"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/system_rela"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:background="@drawable/list_chosen">
+
+        <ImageView
+            android:id="@+id/system_png"
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/system_message" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/system_png"
+            android:gravity="center"
+            android:text="  系统消息"
+            android:textSize="18.0sp" />
+
+        <FrameLayout
+            android:id="@+id/system_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15.0dip">
+
+            <ImageView
+                android:id="@+id/system_png_no"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:visibility="invisible"
+                android:background="@drawable/color_red" />
+
+            <TextView
+                android:id="@+id/system_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#ffffffff"
+                android:textSize="13.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ff808080"
+        android:orientation="vertical" />
+
+</LinearLayout>

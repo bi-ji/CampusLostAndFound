@@ -1,0 +1,135 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="GuideStyle" parent="android:Theme.Light.NoTitleBar"></style>
+
+    <style name="GuideTextStyle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+    </style>
+
+    <style name="RadioTabButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@drawable/btn_tab_text_selector</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="Theme.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <!--tab样式-->
+    <style name="MMTabButton">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/bg_checkbox_menus</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+    </style>
+
+    <!--发布信息条目样式-->
+
+    <style name="PublishInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawableLeft">@drawable/public_one_tuched</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">#FFECD19E</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--progressDialog是继承与Dialog，先设置一下progressDialog的风格，设置背景透明色。-->
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="AppNoWhiteTheme" parent="android:Theme.Light">
+
+        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+    </style>
+
+    <style name="comments_diaog_style" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/comments_dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/comments_dialog_exit</item>
+    </style>
+</resources>

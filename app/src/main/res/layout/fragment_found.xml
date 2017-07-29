@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_found_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_found_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="当前地点无失物信息！" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_net_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_found_net_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="网络连接错误！" />
+        <Button
+            android:id="@+id/btn_reconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="点击重试"/>
+    </FrameLayout>
+    <com.edu.claf.view.CustomListView
+        android:id="@+id/lv_found_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.edu.claf.view.CustomListView>
+
+</LinearLayout>

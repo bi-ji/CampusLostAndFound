@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_home_title"
+    style="@style/GuideStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="4">
+
+    <RelativeLayout
+        android:id="@+id/rl_basepager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg">
+
+        <TextView
+            android:id="@+id/tv_other_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="首页"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:src="@drawable/img_menu" />
+    </RelativeLayout>
+</RelativeLayout>

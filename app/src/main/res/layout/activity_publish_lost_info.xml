@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_green"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/PostLostMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#ff36cd00">
+
+        <TextView
+            android:id="@+id/tv_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:text="发布失物信息"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+        <ImageButton
+            android:id="@+id/iv_post_lost_message_back"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00808080"
+            android:contentDescription="@null"
+            android:src="@drawable/arrow_left_gray_white" />
+
+        <TextView
+            android:id="@+id/postlostmessage_submit"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/normal_write_pressed_gray"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PostLostMessage"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/post_lost_message_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dip"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:gravity="fill_vertical"
+                        android:paddingLeft="5.0dip"
+                        android:text="标题："
+                        android:textColor="#ff808080"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/et_post_lost_message_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_transparent_post"
+                        android:hint="不超过15个字..."
+                        android:maxLength="15"
+                        android:scrollHorizontally="false"
+                        android:singleLine="true"
+                        android:textColor="#ff808080"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_marginRight="60.0dip"
+                        android:background="#ffffffff"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="10.0dip"
+                            android:gravity="top"
+                            android:paddingLeft="5.0dip"
+                            android:text="@string/LostTime"
+                            android:textColor="#ff808080"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/et_post_lost_message_time"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:background="@drawable/shape_transparent_post"
+                            android:focusableInTouchMode="false"
+                            android:hint="请选择丢失时间..."
+                            android:paddingLeft="5.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="false"
+                            android:textColor="#ff808080"
+                            android:textSize="16.0sp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_post_lost_message_time"
+                        android:layout_width="40.0dip"
+                        android:layout_height="40.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10.0dip"
+                        android:background="@drawable/time_choose_orange_gray" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_marginRight="60.0dip"
+                        android:background="#ffffffff"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="10.0dip"
+                            android:gravity="top"
+                            android:paddingLeft="5.0dip"
+                            android:text="@string/LostPlace"
+                            android:textColor="#ff808080"
+                            android:textSize="16.0sp" />
+
+                        <EditText
+                            android:id="@+id/et_post_lost_message_place"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:background="@drawable/shape_transparent_post"
+                            android:hint="请输入丢失地点..."
+                            android:paddingLeft="5.0dip"
+                            android:selectAllOnFocus="true"
+                            android:singleLine="false"
+                            android:textColor="#ff808080"
+                            android:textSize="16.0sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:gravity="fill_vertical"
+                        android:paddingLeft="5.0dip"
+                        android:text="联系电话："
+                        android:textColor="#ff808080"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/et_post_lost_message_telephone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_transparent_post"
+                        android:inputType="phone"
+                        android:scrollHorizontally="false"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="false"
+                        android:textColor="#ff808080"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="180.0dip"
+                    android:background="#ffffffff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:text="@string/choose_lost_type"
+                        android:textColor="#ff000000"
+                        android:textSize="15.0sp" />
+
+
+                    <GridView
+                        android:id="@+id/gv_post_lost_type_message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="5.0dip"
+                        android:columnWidth="50.0dip"
+                        android:gravity="center"
+                        android:horizontalSpacing="2.0dip"
+                        android:numColumns="6"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="2.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffffff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:background="#ffffffff"
+                        android:text="失物简介："
+                        android:textSize="15.0dip" />
+
+                    <EditText
+                        android:id="@+id/et_post_lost_message_desc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:background="@drawable/shape_transparent_post"
+                        android:gravity="top"
+                        android:paddingLeft="5.0dip"
+                        android:textColorHint="#ff000000"
+                        android:textSize="15.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:background="#ffffffff"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/post_lost_message_Num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#ff808080"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/222个字"
+                        android:textColor="#ff808080"
+                        android:textSize="15.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffd3d3d3"
+                    android:orientation="vertical" />
+
+                <Button
+                    android:id="@+id/post_lost_message_submit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="30.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginTop="40.0dip"
+                    android:background="@drawable/text_orange_pink"
+                    android:gravity="center"
+                    android:onClick="submitLostInfo"
+                    android:text="@string/submit"
+                    android:textColor="#ffffffff"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</RelativeLayout>

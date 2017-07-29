@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_green"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_green">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="#ff36cd00">
+
+            <TextView
+                android:id="@+id/aboutus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="关于应用"
+                android:textColor="#ffffffff"
+                android:textSize="20.0sp" />
+
+            <ImageButton
+                android:id="@+id/about_us_back"
+                android:layout_width="50.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="#00808080"
+                android:contentDescription="@null"
+                android:onClick="backPersonCentral"
+                android:src="@drawable/arrow_left_gray_white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="75.0dip"
+            android:layout_height="75.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/about_us_version_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background_green"
+        android:orientation="vertical"
+        android:paddingBottom="40.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/about_us_plat"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="#ffffffff">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10.0dip"
+                    android:text="平台介绍：Android"
+                    android:textSize="18.0sp" />
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/about_us_plat_go"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:paddingRight="15.0dip"-->
+                    <!--android:src="@drawable/arrow_right_gray_white" />-->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/about_us_team"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="#ffffffff">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10.0dip"
+                    android:text="课题名称：基于Android平台的校园失物招领系统"
+                    android:textSize="18.0sp" />
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/about_us_team_go"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:paddingRight="15.0dip"-->
+                    <!--android:src="@drawable/arrow_right_gray_white" />-->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/about_us_welfare"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="#ffffffff">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10.0dip"
+                    android:text="指导老师：曾立胜"
+                    android:textSize="18.0sp" />
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/about_us_welfare_go"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:paddingRight="15.0dip"-->
+                    <!--android:src="@drawable/arrow_right_gray_white" />-->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="#ffffffff">
+
+            <TextView
+                android:id="@+id/sina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10.0dip"
+                android:text="软件作者："
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/sina"
+                android:text="朱涛"
+                android:textColor="@color/royalblue"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="#ffffffff">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10.0dip"
+                android:text="联系邮箱："
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/email"
+                android:text="1241012434@qq.com"
+                android:textColor="@color/royalblue"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="#ffffffff">
+
+            <TextView
+                android:id="@+id/QQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10.0dip"
+                android:text="联系电话："
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/QQ"
+                android:text="13890164397"
+                android:textColor="@color/royalblue"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+    </LinearLayout>
+</LinearLayout>

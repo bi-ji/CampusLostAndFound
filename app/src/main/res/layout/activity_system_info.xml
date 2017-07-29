@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edu.claf.activity.SystemInfoActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/PostLostMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#ff36cd00">
+
+        <TextView
+            android:id="@+id/tv_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:text="系统消息"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+        <ImageButton
+            android:id="@+id/iv_detail_back"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00808080"
+            android:contentDescription="@null"
+            android:onClick="backMyNotify"
+            android:src="@drawable/arrow_left_gray_white" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

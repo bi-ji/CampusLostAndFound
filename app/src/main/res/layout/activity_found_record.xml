@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edu.claf.activity.FoundRecordActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/PostLostMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#ff36cd00">
+
+        <TextView
+            android:id="@+id/tv_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:text="招领记录"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+        <ImageButton
+            android:id="@+id/ib_found_record_back"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00808080"
+            android:contentDescription="@null"
+            android:onClick="backPersonCentral"
+            android:src="@drawable/arrow_left_gray_white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_found_record_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="^0^您还没有招领记录信息哦^0^"
+        android:textSize="18.0sp" />
+
+    <com.edu.claf.view.CustomListView
+        android:id="@+id/lv_found_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.edu.claf.view.CustomListView>
+
+    <FrameLayout
+        android:id="@+id/fl_net_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_lost_record_net_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="网络连接错误！" />
+        <Button
+            android:id="@+id/btn_reconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="点击重试"/>
+    </FrameLayout>
+
+
+</LinearLayout>

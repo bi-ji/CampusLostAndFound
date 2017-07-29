@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background_green"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:background="#ff36cd00">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:text="系统更新"
+                android:textColor="#ffffffff"
+                android:textSize="20.0sp" />
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="50.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="#00808080"
+                android:contentDescription="@null"
+                android:onClick="backPersonCentral"
+                android:src="@drawable/arrow_left_gray_white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200.0dip"
+                android:layout_height="200.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:background="@mipmap/ic_launcher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="更新说明："
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="已是最新本版，暂无更新说明！"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:background="@drawable/text_orange_pink"
+        android:text="立即更新"
+        android:textColor="#ffffffff" />
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff36cd00">
+
+
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/back"-->
+            <!--android:layout_width="50.0dip"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="#00808080"-->
+            <!--android:contentDescription="@null"-->
+            <!--android:src="@drawable/arrow_left_gray_white" />-->
+
+        <ImageView
+            android:id="@+id/iv_user_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/user_icon_default"
+            android:scaleType="centerInside"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/btn_user_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_user_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="2.0dip"
+            android:background="@drawable/btn_login_selector"
+            android:contentDescription="@null"
+            android:text="点我登录"
+            android:textColor="#ffffffff"
+            android:onClick="login"
+            android:textSize="15.0sp" />
+        <TextView
+            android:id="@+id/tv_login_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/btn_user_login"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <GridView
+        android:layout_weight="1"
+        android:id="@+id/gv_person_central"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="2.0dip"
+        android:background="@color/albumback"
+        android:horizontalSpacing="4.0dip"
+        android:numColumns="3"
+        android:verticalSpacing="4.0dip" />
+
+
+</LinearLayout>

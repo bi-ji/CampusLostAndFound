@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/GuideStyle"
+    android:id="@+id/ll_basepage"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_basepager"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bg">
+
+        <View
+            android:id="@+id/place_holder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"/>
+        <!--<Button-->
+            <!--android:id="@+id/btn_lost"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignRight="@id/place_holder"-->
+            <!--android:textSize="18dp"-->
+            <!--android:text="失物"-->
+            <!--android:textAlignment="center" />-->
+        <!--&lt;!&ndash;android:layout_toRightOf="@id/btn_map"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_alignBottom="@+id/btn_map"&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/btn_found"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:text="招领"-->
+            <!--android:layout_alignLeft="@id/place_holder"-->
+            <!--android:textSize="18dp"-->
+            <!--android:textAlignment="center" />-->
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="22dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <!--<ImageButton-->
+            <!--android:id="@+id/imgbtn_map"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@null"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:src="@drawable/img_menu"-->
+            <!--/>-->
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/fl_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+
+</LinearLayout>

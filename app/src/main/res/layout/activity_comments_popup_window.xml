@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+
+    <!-- 输入框、评论按钮 -->
+    <LinearLayout
+        android:id="@+id/pop_comments_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCCCCC"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <!-- 输入框 -->
+        <EditText
+            android:id="@+id/et_comments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:maxLength="100"
+            android:minHeight="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="textMultiLine"
+            android:gravity="left"
+            android:maxLines="6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"/>
+        <!-- 回复按钮 -->
+        <Button
+            android:id="@+id/btn_comments"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:text="评论"
+            android:layout_marginRight="10dp"
+            android:background="#FFFFFF"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/pop_comments_layout"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/et_comments"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:hint="请输入评论内容"-->
+            <!--android:textSize="28dp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:background="@color/red"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_comments"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="评论"-->
+            <!--android:textStyle="bold" />-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ll_splash"     
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/welcome">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100.0dip"
+            android:layout_height="100.0dip"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/about_us_version_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background_green"
+        android:orientation="vertical"
+        android:paddingBottom="40.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/about_us_plat"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10.0dip"
+                    android:textColor="@color/black"
+                    android:text="平台介绍：Android"
+                    android:textSize="18.0sp" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/about_us_plat_go"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:paddingRight="15.0dip"-->
+                <!--android:src="@drawable/arrow_right_gray_white" />-->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/about_us_team"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="#ffffffff">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10.0dip"
+                    android:textColor="@color/black"
+                    android:text="课题名称：基于Android平台的校园失物招领系统"
+                    android:textSize="18.0sp" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/about_us_team_go"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:paddingRight="15.0dip"-->
+                <!--android:src="@drawable/arrow_right_gray_white" />-->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/about_us_welfare"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="#ffffffff">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10.0dip"
+                    android:textColor="@color/black"
+                    android:text="指导老师：曾立胜"
+                    android:textSize="18.0sp" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/about_us_welfare_go"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:paddingRight="15.0dip"-->
+                <!--android:src="@drawable/arrow_right_gray_white" />-->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="#ffffffff">
+
+            <TextView
+                android:id="@+id/sina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10.0dip"
+                android:text="软件作者："
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/sina"
+                android:text="朱涛"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="#ffffffff">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10.0dip"
+                android:textColor="@color/black"
+                android:text="联系邮箱："
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/email"
+                android:text="1241012434@qq.com"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:background="#ffffffff">
+
+            <TextView
+                android:id="@+id/QQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10.0dip"
+                android:text="联系电话："
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/QQ"
+                android:text="13890164397"
+                android:textColor="@color/black"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_weight="0.0"
+            android:background="@color/gray" />
+    </LinearLayout>
+
+</LinearLayout>

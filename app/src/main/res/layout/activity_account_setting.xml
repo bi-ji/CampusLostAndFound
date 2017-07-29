@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/account_setting"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_green"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#ff36cd00">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:text="账户设置"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+        <ImageButton
+            android:id="@+id/setting_back"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#ff36cd00"
+            android:contentDescription="@null"
+            android:onClick="backPersonCentral"
+            android:src="@drawable/arrow_left_gray_white" />
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/setting_test"-->
+            <!--android:layout_width="50.0dip"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="#ff36cd00"-->
+            <!--android:contentDescription="@null"-->
+            <!--android:onClick="test"-->
+            <!--android:src="@drawable/arrow_left_gray_white" />-->
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/change_nickname_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#ffd3d3d3"
+                android:orientation="vertical" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_user_portrait"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60.0dip"
+                    android:background="#ffffffff"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/arrow_right_gray_white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="头像设置"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:id="@+id/iv_portrait"
+                    android:layout_width="50.0dip"
+                    android:layout_height="50.0dip"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="25.0dip"
+                    android:background="@drawable/about_us" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#ffd3d3d3"
+                android:orientation="vertical" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/nickname_useless"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55.0dip"
+                    android:background="#ffffffff"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/arrow_right_gray_white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="修改昵称"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/nickname"
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="25.0dip"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="未设置"
+                    android:textSize="18.0sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#ffd3d3d3"
+                android:orientation="vertical" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/telephone_useless"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55.0dip"
+                    android:background="#ffffffff"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="个人账号"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_telephone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="15.0dip"
+                    android:text=""
+                    android:textSize="18.0sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#ffd3d3d3"
+                android:orientation="vertical" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_as_change_place"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55.0dip"
+                    android:background="#ffffffff"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/arrow_right_gray_white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:text="修改学校"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_as_change_school"
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="25.0dip"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="18.0sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#ffd3d3d3"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/tv_change_password"
+                android:layout_width="fill_parent"
+                android:layout_height="55.0dip"
+                android:background="#ffffffff"
+                android:clickable="true"
+                android:drawableRight="@drawable/arrow_right_gray_white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:text="修改密码"
+                android:textSize="18.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#ffd3d3d3"
+                android:orientation="vertical" />
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="1.0dip"-->
+            <!--android:layout_marginTop="100.0dip"-->
+            <!--android:background="#ffd3d3d3"-->
+            <!--android:orientation="vertical" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_exit"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="50.0dip"-->
+            <!--android:background="#ffffffff"-->
+            <!--android:clickable="true"-->
+            <!--android:gravity="center"-->
+            <!--android:text="退出登录"-->
+            <!--android:textColor="#ffff6347"-->
+            <!--android:textSize="20.0sp" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="1.0dip"-->
+            <!--android:background="#ffd3d3d3"-->
+            <!--android:orientation="vertical" />-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

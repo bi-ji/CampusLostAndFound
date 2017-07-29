@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_green"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/account_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#ff36cd00">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:duplicateParentState="true"
+            android:gravity="center_vertical"
+            android:text="切换到城市或学校"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+        <ImageButton
+            android:id="@+id/ib_choose_location_back"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00808080"
+            android:contentDescription="@null"
+            android:src="@drawable/arrow_left_gray_white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:background="#ffffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:text="当前城市  ："
+            android:textSize="18.0sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/change_location_scrollview"
+            android:layout_width="120.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/tv_change_location_now"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5.0dip"
+                android:text="长春市"
+                android:textColor="#ffffa500"
+                android:textSize="16.0sp" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/change_location_location_line"
+            android:layout_width="0.5dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:background="#ff808080"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip" />
+
+        <TextView
+            android:id="@+id/tv_lost_data_all"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="全国"
+            android:textColor="@color/normal_green_pressed_gray"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ff808080" />
+
+    <LinearLayout
+        android:id="@+id/change_location_one"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_choose_location_province"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:background="#ffffffff">
+
+            <TextView
+                android:id="@+id/tv_change_locatio_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15.0dip"
+                android:text="切换到城市"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/tv_change_location_city_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="30.0dip"
+                android:text="切换"
+                android:textSize="18.0sp" />
+
+            <ImageView
+                android:id="@+id/tv_change_location_city_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:paddingRight="10.0dip"
+                android:src="@drawable/arrow_right_gray_white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ff808080" />
+
+    <LinearLayout
+        android:id="@+id/change_location_two"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_choose_location_school"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:background="#ffffffff">
+
+            <TextView
+                android:id="@+id/tv_change_location_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="15.0dip"
+                android:text="切换到学校"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/change_location_school_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="30.0dip"
+                android:text="切换"
+                android:textSize="18.0sp" />
+
+            <ImageView
+                android:id="@+id/change_location_school_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:paddingRight="10.0dip"
+                android:src="@drawable/arrow_right_gray_white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ff808080" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_choose_location_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/text_orange_pink"
+            android:text="取消"
+            android:textColor="#ffffffff"
+            android:textSize="18.0sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+</LinearLayout>
