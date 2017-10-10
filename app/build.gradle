@@ -33,13 +33,13 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:design:23.2.1'
-    compile files('libs/xUtils-3.1.22.jar')
     compile 'com.google.code.gson:gson:2.2.4'
     compile 'com.jakewharton:butterknife:5.1.1'
     compile name: 'SMSSDK-2.0.2', ext: 'aar'
     compile name: 'SMSSDKGUI-2.0.2', ext: 'aar'
     androidTestCompile 'junit:junit:4.12'
+    compile files('libs/xUtils-3.1.22.jar')
     compile files('libs/org.apache.http.legacy.jar')
     compile files('libs/BmobSDK_V3.4.6_0415.jar')
-    compile files('libs/json-lib-2.2.3-jdk15.jar')
+    compile files('libs/json-lib-2.2.2-jdk15.jar')
 }
